@@ -50,7 +50,6 @@ export function Footer() {
               {HOTEL_CATEGORIES.map((c) => (
                 <li key={c.slug}><Link to={`/hotels/${c.slug}`} className="hover:text-gold-300 transition-colors">{c.name}</Link></li>
               ))}
-              <li><Link to="/hotels/top-temples" className="hover:text-gold-300 transition-colors">Dharmik Yatra</Link></li>
             </ul>
           </div>
 

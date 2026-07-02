@@ -3,21 +3,26 @@ import { Reveal } from '../components/Reveal';
 import { WHATSAPP } from '../lib/data';
 import { MapPin, Clock, Users, ArrowRight, Route, Fuel, ShieldCheck } from 'lucide-react';
 import TransportSolutions from '../assets/Transport-solutions.png'
+import RoyalEnfield from '../assets/Bullet.png'
+import RoyalHimalyan from '../assets/Royal-Himalayan.png'
+import Activa from '../assets/scouty.png'
+import Ktm from '../assets/ktm-duke.png'
+
 
 const TAXI = [
-  { route: 'Shimla Local Sightseeing', duration: '8 hours', price: '₹2,500', seats: '4+1 Seater' },
-  { route: 'Shimla → Kufri → Narkanda', duration: 'Full day', price: '₹3,500', seats: '4+1 Seater' },
-  { route: 'Delhi → Shimla', duration: '8-9 hours', price: '₹6,500', seats: '4+1 Seater' },
-  { route: 'Shimla → Manali', duration: '6-7 hours', price: '₹5,000', seats: '4+1 Seater' },
-  { route: 'Shimla → Kedarnath (Gaurikund)', duration: '2 days', price: '₹14,000', seats: '4+1 Seater' },
-  { route: 'Chandigarh → Shimla', duration: '4 hours', price: '₹4,000', seats: '4+1 Seater' },
+  { route: 'Shimla Local Sightseeing', duration: '8 hours', price: '₹ As Per Your Budget', seats: '4+1 Seater' },
+  { route: 'Shimla → Kufri → Narkanda', duration: 'Full day', price: '₹ As Per Your Budget', seats: '4+1 Seater' },
+  { route: 'Delhi → Shimla', duration: '8-9 hours', price: '₹ As Per Your Budget', seats: '4+1 Seater' },
+  { route: 'Shimla → Manali', duration: '6-7 hours', price: '₹ As Per Your Budget', seats: '4+1 Seater' },
+  { route: 'Shimla → Kedarnath (Gaurikund)', duration: '2 days', price: '₹ As Per Your Budget', seats: '4+1 Seater' },
+  { route: 'Chandigarh → Shimla', duration: '4 hours', price: '₹ As Per Your Budget', seats: '4+1 Seater' },
 ];
 
 const BIKES = [
-  { name: 'Royal Enfield Classic 350', price: '₹1,200/day', img: 'https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { name: 'Royal Enfield Himalayan', price: '₹1,500/day', img: 'https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { name: 'Activa / Scooty', price: '₹500/day', img: 'https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { name: 'Bullet 500', price: '₹1,400/day', img: 'https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&w=800' },
+  { name: 'Royal Enfield Classic 350', price: '₹1,000/day', img: RoyalEnfield },
+  { name: 'Royal Enfield Himalayan', price: '₹1,500/day', img: RoyalHimalyan },
+  { name: 'Activa / Scooty', price: '₹800/day', img: Activa },
+  { name: 'KTM / Duke', price: '₹1,500/day', img: Ktm },
 ];
 
 export function OnlineTransportPage() {
@@ -47,7 +52,9 @@ export function OnlineTransportPage() {
                   <div className="flex items-center gap-2"><Fuel size={14} className="text-forest-400" /> Fuel included</div>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl font-serif font-bold text-gold-600">{t.price}</span>
+                  <span className="text-2xl font-serif font-bold text-gold-600">
+                    <span className="text-3xl align-top">₹</span> {t.price.replace('₹ ', '')}
+                  </span>
                   <a href={WHATSAPP} target="_blank" rel="noreferrer" className="btn-gold text-sm py-2 px-4">Book <ArrowRight size={14} /></a>
                 </div>
               </div>
