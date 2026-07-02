@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useRouter } from '../lib/router';
 import { HOTEL_CATEGORIES, WHATSAPP, PHONE_TEL } from '../lib/data';
-import { Menu, X, ChevronDown, Phone, Mountain, Home, Bus, Package, Newspaper, Video, Mail } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone, Mountain, Home, Bus, Package, Newspaper, Video, Mail, Info } from 'lucide-react';
 
 const NAV = [
   { label: 'Home', to: '/', icon: Home },
@@ -14,6 +14,7 @@ const NAV = [
   { label: 'Blog', to: '/blog', icon: Newspaper },
   { label: 'Video Tour', to: '/video-tour', icon: Video },
   { label: 'Contact Us', to: '/contact', icon: Mail },
+  { label: 'About', to: '/about', icon: Info },
 ];
 
 export function Navbar() {
