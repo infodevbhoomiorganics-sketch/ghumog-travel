@@ -22,16 +22,8 @@ const SERVICES = [
 const FEATURES = [
   { icon: Mountain, title: 'Scenic Views', text: 'Wake up to breathtaking Himalayan vistas from every property.' },
   { icon: Sparkles, title: 'Premium Stay', text: 'Thoughtfully designed rooms with comfort and elegance in mind.' },
+  { icon: Home, title: 'Pets Friendly', text: 'Bring your furry companions along and enjoy a warm, welcoming stay.' },
   { icon: Home, title: 'Wooden Rooms', text: 'Authentic mountain architecture with warm wooden interiors.' },
-  { icon: Home, title: 'Terrace Rooms', text: 'Open-air terraces perfect for morning tea and sunset views.' },
-  { icon: Sparkles, title: 'Comfort & Luxury', text: 'Modern amenities blended seamlessly with rustic charm.' },
-  { icon: Sparkles, title: 'Peaceful Stay', text: 'Quiet, serene locations far from the noise of city life.' },
-  { icon: Home, title: 'Family & Couple Friendly', text: 'Safe, welcoming spaces for every kind of traveller.' },
-  { icon: Utensils, title: 'Homely Food on Request', text: 'Authentic home-style meals prepared just for you.' },
-  { icon: Flame, title: 'Bonfire on Request', text: 'Cozy bonfire evenings under star-filled mountain skies.' },
-  { icon: Car, title: 'Free Parking', text: 'Secure, complimentary parking at all our properties.' },
-  { icon: ShieldCheck, title: 'Safe & Secure Environment', text: 'Your safety and peace of mind are our top priority.' },
-  { icon: ShieldCheck, title: 'Safe, Reliable & Trusted', text: 'A travel partner thousands of guests have come to trust.' },
 ];
 
 export function HomePage() {
@@ -150,7 +142,7 @@ export function HomePage() {
       {/* FEATURES / HIGHLIGHTS */}
       <section className="container-px py-20">
         <Reveal>
-          <SectionHeading eyebrow="Why GhumoG" title="Features & Highlights" subtitle="Every detail crafted for a memorable Himalayan stay — comfort, safety, and homely warmth." />
+          <SectionHeading subtitle="Every detail crafted for a memorable Himalayan stay — comfort, safety, and homely warmth." />
         </Reveal>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {FEATURES.map((f, i) => (

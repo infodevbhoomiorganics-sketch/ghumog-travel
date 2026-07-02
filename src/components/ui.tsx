@@ -27,11 +27,11 @@ export function PageHero({ title, subtitle, image, breadcrumb }: { title: string
   );
 }
 
-export function SectionHeading({ eyebrow, title, subtitle, center = true }: { eyebrow?: string; title: string; subtitle?: string; center?: boolean }) {
+export function SectionHeading({ eyebrow, title, subtitle, center = true }: { eyebrow?: string; title?: string; subtitle?: string; center?: boolean }) {
   return (
     <div className={`${center ? 'text-center mx-auto' : ''} max-w-2xl mb-12`}>
       {eyebrow && <span className="section-eyebrow">{eyebrow}</span>}
-      <h2 className="text-3xl md:text-5xl font-serif font-semibold text-forest-900 mb-4">{title}</h2>
+      {title && <h2 className="text-3xl md:text-5xl font-serif font-semibold text-forest-900 mb-4">{title}</h2>}
       {subtitle && <p className="text-forest-600 text-lg leading-relaxed">{subtitle}</p>}
     </div>
   );
