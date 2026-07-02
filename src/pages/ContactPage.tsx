@@ -77,9 +77,9 @@ export function ContactPage() {
               <div className="glass rounded-3xl p-8">
                 <h2 className="text-2xl font-serif font-semibold text-forest-900 mb-6">Get in Touch</h2>
                 <div className="space-y-5">
-                  <a href={PHONE_TEL} className="flex items-center gap-4 group">
+                  <a href={PHONE_TEL} className="flex items-start gap-4 group">
                     <div className="w-12 h-12 rounded-2xl bg-forest-800 flex items-center justify-center group-hover:scale-110 transition-transform"><Phone size={20} className="text-gold-300" /></div>
-                    <div><div className="text-xs text-forest-500 uppercase tracking-wide">Phone</div><div className="text-forest-900 font-semibold">{PHONE}</div></div>
+                    <div><div className="text-xs text-forest-500 uppercase tracking-wide">Phone</div><div className="text-forest-900 font-semibold whitespace-pre-line">{PHONE}</div></div>
                   </a>
                   <a href={WHATSAPP} target="_blank" rel="noreferrer" className="flex items-center gap-4 group">
                     <div className="w-12 h-12 rounded-2xl bg-forest-800 flex items-center justify-center group-hover:scale-110 transition-transform"><MessageCircle size={20} className="text-gold-300" /></div>
@@ -93,6 +93,29 @@ export function ContactPage() {
                     <div className="w-12 h-12 rounded-2xl bg-forest-800 flex items-center justify-center group-hover:scale-110 transition-transform"><MapPin size={20} className="text-gold-300" /></div>
                     <div><div className="text-xs text-forest-500 uppercase tracking-wide">Location</div><div className="text-forest-900 font-semibold">Shoghi, Shimla, Himachal Pradesh</div></div>
                   </a>
+                </div>
+                <div className="mt-8 space-y-6">
+                  <div>
+                    <h3 className="text-lg font-serif font-semibold text-forest-900 mb-3">Corporate Office</h3>
+                    <p className="text-forest-700 leading-relaxed">We're here to help you plan unforgettable journeys across Himachal Pradesh, Uttarakhand, and beyond. Whether you need hotel bookings, holiday packages, group tours, corporate travel, or travel assistance, our team is ready to assist you.</p>
+                  </div>
+                  <div className="grid grid-cols-1 gap-5">
+                    <div className="rounded-3xl bg-forest-50 p-5 border border-forest-100">
+                      <p className="text-sm uppercase tracking-[0.2em] text-forest-500 font-semibold mb-3">Himachal Corporate Office</p>
+                      <p className="text-forest-900 font-semibold">GhumoG Bhar Ke</p>
+                      <p className="text-forest-700">Khushala Top, VPO Shoghi, Shimla, Himachal Pradesh – 171219</p>
+                    </div>
+                    <div className="rounded-3xl bg-forest-50 p-5 border border-forest-100">
+                      <p className="text-sm uppercase tracking-[0.2em] text-forest-500 font-semibold mb-3">Uttarakhand Corporate Office</p>
+                      <p className="text-forest-900 font-semibold">GhumoG Bhar Ke</p>
+                      <p className="text-forest-700">Tapovan, Badrinath Road, Rishikesh, Uttarakhand</p>
+                    </div>
+                    <div className="rounded-3xl bg-forest-50 p-5 border border-forest-100">
+                      <p className="text-sm uppercase tracking-[0.2em] text-forest-500 font-semibold mb-3">Haridwar Office</p>
+                      <p className="text-forest-900 font-semibold">GhumoG Bhar Ke</p>
+                      <p className="text-forest-700">Mahadev Apartments, Kankhal, Haridwar, Uttarakhand</p>
+                    </div>
+                  </div>
                 </div>
                 <div className="flex gap-3 mt-6 pt-6 border-t border-forest-100">
                   {SOCIALS.map((s) => {

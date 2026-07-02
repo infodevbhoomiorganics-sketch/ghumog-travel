@@ -58,7 +58,7 @@ export function Footer() {
             <h4 className="text-white font-serif text-lg font-semibold mb-4">Get in Touch</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2.5"><MapPin size={16} className="text-gold-400 mt-0.5 shrink-0" /> Shoghi, Shimla, Himachal Pradesh</li>
-              <li><a href="tel:+917018939901" className="flex items-center gap-2.5 hover:text-gold-300 transition-colors"><Phone size={16} className="text-gold-400" /> {PHONE}</a></li>
+              <li><a href="tel:+917018939901" className="flex items-start gap-2.5 hover:text-gold-300 transition-colors"><Phone size={16} className="text-gold-400 mt-0.5" /> <span className="whitespace-pre-line">{PHONE}</span></a></li>
               <li><a href={`mailto:${EMAIL}`} className="flex items-center gap-2.5 hover:text-gold-300 transition-colors break-all"><Mail size={16} className="text-gold-400 shrink-0" /> {EMAIL}</a></li>
               <li><a href={MAP_LINK} target="_blank" rel="noreferrer" className="hover:text-gold-300 transition-colors">Google Business Profile</a></li>
             </ul>
