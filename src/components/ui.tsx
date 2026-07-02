@@ -7,7 +7,7 @@ export function PageHero({ title, subtitle, image, breadcrumb }: { title: string
     <section className="relative h-[52vh] min-h-[360px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img src={image} alt={title} className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-forest-950/70 via-forest-900/50 to-forest-950/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-forest-950/85 via-forest-900/70 to-forest-950/90" />
       </div>
       <div className="relative z-10 text-center text-white container-px">
         {breadcrumb && (
@@ -20,8 +20,8 @@ export function PageHero({ title, subtitle, image, breadcrumb }: { title: string
             ))}
           </nav>
         )}
-        <h1 className="text-4xl md:text-6xl font-serif font-semibold mb-3 animate-fade-up">{title}</h1>
-        {subtitle && <p className="text-lg text-white/80 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '120ms' }}>{subtitle}</p>}
+        <h1 className="text-4xl md:text-6xl font-serif font-semibold mb-3 animate-fade-up text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)]">{title}</h1>
+        {subtitle && <p className="text-lg text-white font-medium max-w-2xl mx-auto animate-fade-up leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]" style={{ animationDelay: '120ms' }} dangerouslySetInnerHTML={{ __html: subtitle }} />}
       </div>
     </section>
   );

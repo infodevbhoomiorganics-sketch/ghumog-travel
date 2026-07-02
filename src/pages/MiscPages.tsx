@@ -2,6 +2,7 @@ import { PageHero, CtaBanner, SectionHeading } from '../components/ui';
 import { Reveal } from '../components/Reveal';
 import { FAQS, TAGLINES } from '../lib/data';
 import { useState } from 'react';
+import Himachalpradesh1 from '../assets/Himachal-pradesh1.png';
 import { ChevronDown, Mountain, Heart, Compass, Award, Phone, Mail, MessageCircle, Youtube, Facebook, Instagram, MapPin } from 'lucide-react';
 
 const AviralJain = '/images/founder/image.png';
@@ -24,9 +25,9 @@ export function AboutPage() {
   return (
     <div>
       <PageHero
-        title="About GhumoG"
-        subtitle="Your trusted Himalayan travel companion, rooted in Shoghi, Shimla."
-        image="https://images.pexels.com/photos/803975/pexels-photo-803975.jpeg?auto=compress&cs=tinysrgb&w=1920"
+        title="Introduction to GhumoG"
+        subtitle="Your trusted Himalayan travel companion. Expert of<br>Himachal and Uttarakhand."
+        image={Himachalpradesh1}
         breadcrumb={[{ label: 'Home', to: '/' }, { label: 'About' }]}
       />
 

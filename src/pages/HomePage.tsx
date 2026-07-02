@@ -5,6 +5,10 @@ import { SectionHeading, CtaBanner } from '../components/ui';
 import { HOTELS, HOTEL_CATEGORIES, TESTIMONIALS, WHATSAPP, BLOGS, TAGLINES } from '../lib/data';
 import { ArrowRight, Star, MapPin, Play, ChevronLeft, ChevronRight, Quote, Mountain, Bus, Package, Compass, Trees, Sparkles, ShieldCheck, Home, Flame, Utensils, Car } from 'lucide-react';
 import { useState } from 'react';
+import HimachalImg from '../assets/Himachal-pradesh.png';
+import Uttarakhand from '../assets/Uttarakhand.png';
+import Dharkmikyatra from '../assets/Dharkmik-yatra.png';
+
 
 const HERO_SLIDES = [
   'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=1920',
@@ -170,10 +174,7 @@ export function HomePage() {
               <Reveal key={c.slug} delay={i * 100}>
                 <Link to={`/hotels/${c.slug}`} className="group relative block h-80 rounded-3xl overflow-hidden card-hover">
                   <img
-                    src={['https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=800',
-                          'https://images.pexels.com/photos/803975/pexels-photo-803975.jpeg?auto=compress&cs=tinysrgb&w=800',
-                          'https://images.pexels.com/photos/358238/pexels-photo-358238.jpeg?auto=compress&cs=tinysrgb&w=800',
-                          'https://images.pexels.com/photos/261101/pexels-photo-261101.jpeg?auto=compress&cs=tinysrgb&w=800'][i]}
+                    src={[HimachalImg, Uttarakhand, Dharkmikyatra][i]}
                     alt={c.name}
                     loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

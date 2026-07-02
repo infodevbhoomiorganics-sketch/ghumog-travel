@@ -1,6 +1,7 @@
 import { PageHero, CtaBanner } from '../components/ui';
 import { Reveal } from '../components/Reveal';
 import { VIDEOS } from '../lib/data';
+import { Youtube } from 'lucide-react';
 
 export function VideoTourPage() {
   return (
@@ -11,6 +12,20 @@ export function VideoTourPage() {
         image="https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=1920"
         breadcrumb={[{ label: 'Home', to: '/' }, { label: 'Video Tour' }]}
       />
+
+      <section className="container-px pt-10 pb-4">
+        <div className="max-w-5xl mx-auto flex justify-center">
+          <a
+            href="https://www.youtube.com/@ghumog"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[#FF0000] px-5 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-200 hover:scale-105"
+          >
+            <Youtube size={18} />
+            Visit YouTube Channel
+          </a>
+        </div>
+      </section>
 
       <section className="container-px py-16">
         <div className="max-w-5xl mx-auto space-y-12">
